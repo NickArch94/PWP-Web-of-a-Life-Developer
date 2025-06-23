@@ -9,7 +9,7 @@
   </head>
   <body>
   <!--Header-->
-  <div class="bg-orange-300 container mx-auto flex flex-col items-center py-12">
+  <div class="bg-orange-300 flex flex-col items-center py-12">
     <header class="w-full justify-center items-center flex col">
       <h1 class="text-5xl text-center text-black-200 font-bold">The Web of a Life Developer</h1>
     </header>
@@ -41,31 +41,112 @@
   <!--Body-->
   <main class="relative h-screen">
     <div class="absolute inset-0 bg-[url('https://media.tenor.com/uSo4lQu9dVgAAAAM/homer-smile.gif')] opacity-30 bg-fixed"></div>
-    <div class="relative z-10">
+    <div class="relative z-10 py-8">
 
-      <p class="text-black">
-         This is the Vite App. Below, delimited by triple backticks, is the code that is running on this page.
-         It is written in TypeScript and compiled to JavaScript. React is used for the UI, and tailwindcss is used for styling.
-      </p>
+      <!--  My Journey and Adventures-->
+    <div class="bg-sky-800 text-white p-8 container mx-auto my-8 flex flex-col items-start self-start pb-12 pt-5">
+          <h1 class="text-3xl ml-11 text-center text-white font-bold">My Journey and Adventures</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-8">
+          <div class="lg:col-span-1">
+            <div class="bg-white aspect-square border-2 border-gray-800 relative">
+                 <div class="absolute inset-2">
+                   <svg class="w-full h-full" viewBox="0 0 100 100">
+                     <line x1="0" y1="0" x2="100" y2="100" stroke="black" stroke-width="1"/>
+                     <line x1="100" y1="0" x2="0" y2="100" stroke="black" stroke-width="1"/>
+                   </svg>
+                 </div>
+           </div>
+          </div>
+        </div>
+  <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- First small image with text -->
+        <div>
+          <div class="bg-white aspect-video border-2 border-gray-800 relative mb-4 -mt-4">
 
-      <p class="text-black">
-         I am excited for what this project will become. I hope you will remain patient with me as I work through this!
-      </p>
-    </div>
+            <div class="absolute inset-2">
+              <svg class="w-half h-half" viewBox="0 0 100 100">
+              </svg>
+            </div>
+          </div>
+          <p class="text-sm leading-relaxed text-white">
+            Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem bits of moving fluff are creatures of the cosmos the ash of stellar alchemy tingling of the spine Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur? With pretty stories for which there's little good evidence permanence of the stars a very small stage in a vast cosmic arena hydrogen atoms with pretty stories for which there's little good evidence rich in heavy atoms and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+          </p>
+        </div>
+    <div class="flex ml-15 self-start items-start">
+      <div class="bg-white aspect-square border-2 border-gray-800 relative mb-4 size-64 self-start">
+
+        <div class="absolute inset-2">
+          <svg class="w-full h-full" viewBox="0 0 100 100">
+          </svg>
+        </div>
+      </div>
+      <div class="bg-white aspect-square border-2 border-gray-800 relative ml-8 mb-4 size-64 self-start">
+
+        <div class="absolute inset-2">
+          <svg class="w-full h-full" viewBox="0 0 100 100">
+          </svg>
+        </div>
+      </div>
+      <div class="bg-white aspect-square border-2 border-gray-800 relative ml-8 mb-4 size-64 self-start">
+
+        <div class="absolute inset-2">
+          <svg class="w-full h-full" viewBox="0 0 100 100">
+          </svg>
+        </div>
+      </div>
+  </div>
+  </div>
   </main>
 
-  <!--Footer-->
+
+
+
   <footer class="bg-zinc-100 px-4 py-10">
-  <div class="flex flex-col justify-center p-2 pl-7">
-    <div> <!--separator for all footer content-->
-      <p class="text-black text-2xl font-bold text-left">
-        Check Out These
-      </p>
-      <p class="text-black text-2xl font-bold text-left">
-        Additional Resources
-      <a href="javascript:void(0)" class="text-blue-500 hover:bg-gradient-to-r cursor-pointer text-gray-500">Find local outreach opportunities</a>
+    <div class="max-w-6xl mx-auto">
+      <!-- Main footer content -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- Title section -->
+        <div class="md:col-span-1">
+          <h2 class="text-black text-2xl font-bold leading-tight">
+            Check Out These<br>
+            Additional Resources
+          </h2>
+        </div>
+
+        <!-- Health Services section -->
+        <div class="md:col-span-1">
+          <h3 class="text-black text-lg font-bold mb-3">HEALTH SERVICES</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-blue-600 hover:text-blue-800 underline">Find Local Outreach</a></li>
+          </ul>
+        </div>
+
+        <!-- Donate section -->
+        <div class="md:col-span-1">
+          <h3 class="text-black text-lg font-bold mb-3">DONATE</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-blue-600 hover:text-blue-800 underline">Find a donation center</a></li>
+            <li><a href="#" class="text-blue-600 hover:text-blue-800 underline">Local Fundraising</a></li>
+          </ul>
+        </div>
+
+        <!-- Career Resources section -->
+        <div class="md:col-span-1">
+          <h3 class="text-black text-lg font-bold mb-3">CAREER RESOURCES</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-blue-600 hover:text-blue-800 underline">Career Guidance</a></li>
+            <li><a href="#" class="text-blue-600 hover:text-blue-800 underline">Career Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright section -->
+      <div class="border-t border-gray-300 pt-6">
+        <p class="text-center text-gray-600 text-sm">
+          Copyright © 2024 My Name
+        </p>
+      </div>
     </div>
-  </div>
   </footer>
 
     <script type="module" src="/src/main.js"></script>

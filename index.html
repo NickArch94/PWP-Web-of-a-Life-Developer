@@ -8,24 +8,28 @@
 
   </head>
   <body>
-  <h1 class="text-3xl font-bold underline">
-    The Web of a Life Developer
-  </h1>
+  <!--Header-->
+  <div class="bg-orange-300 container mx-auto flex flex-col items-center py-12">
+    <header class="w-full justify-center items-center flex col">
+      <h1 class="text-5xl text-center text-black-200 font-bold">The Web of a Life Developer</h1>
+    </header>
+  </div>
+
   <!--Navigation-->
   <nav class="bg-blue-400">
     <div class="mx-auto max-w-7x1 px-2">
       <div class="relative flex h-16 items-center justify-between">
       <div class="flex flex-1 items-center justify-center">
         <div class="flex space-x-4">
-          <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">My journey</a>
+          <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-blue-800">My Journey</a>
 
-          <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">Struggles & Lessons</a>
+          <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-blue-800">Struggles & Lessons</a>
 
-          <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">Support & Motivation</a>
+          <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-blue-800">Support & Motivation</a>
 
-          <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+          <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-blue-800">Blog</a>
 
-          <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium">Reach Out</a>
+          <a href="#" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-blue-800">Reach Out</a>
         </div>
       </div>
         \
@@ -33,13 +37,36 @@
       </div>
     </div>
   </nav>
-  <p>
-    This is the Vite App. Below, delimited by triple backticks, is the code that is running on this page.
-    It is written in TypeScript and compiled to JavaScript. React is used for the UI, and tailwindcss is used for styling.
-  </p>
-  <p>
-    I am excited for what this project will become. I hope you will remain patient with me as I work through this!
-  </p>
+
+  <!--Body-->
+  <main class="relative h-screen">
+    <div class="absolute inset-0 bg-[url('https://media.tenor.com/uSo4lQu9dVgAAAAM/homer-smile.gif')] opacity-30 bg-fixed"></div>
+    <div class="relative z-10">
+
+      <p class="text-black">
+         This is the Vite App. Below, delimited by triple backticks, is the code that is running on this page.
+         It is written in TypeScript and compiled to JavaScript. React is used for the UI, and tailwindcss is used for styling.
+      </p>
+
+      <p class="text-black">
+         I am excited for what this project will become. I hope you will remain patient with me as I work through this!
+      </p>
+    </div>
+  </main>
+
+  <!--Footer-->
+  <footer class="bg-zinc-100 px-4 py-10">
+  <div class="flex flex-col justify-center p-2 pl-7">
+    <div> <!--separator for all footer content-->
+      <p class="text-black text-2xl font-bold text-left">
+        Check Out These
+      </p>
+      <p class="text-black text-2xl font-bold text-left">
+        Additional Resources
+      <a href="javascript:void(0)" class="text-blue-500 hover:bg-gradient-to-r cursor-pointer text-gray-500">Find local outreach opportunities</a>
+    </div>
+  </div>
+  </footer>
 
     <script type="module" src="/src/main.js"></script>
   </body>

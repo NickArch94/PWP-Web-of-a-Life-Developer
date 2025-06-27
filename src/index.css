@@ -2,3 +2,8 @@
 @import "flowbite/src/themes/default.css";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+.website {
+    position: absolute;
+    left: -9999px;
+}

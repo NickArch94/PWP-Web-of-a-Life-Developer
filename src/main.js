@@ -49,9 +49,17 @@ gsap.from(".text-journey-02", {
     ease: "power2.in"
 })
 
-const supportTimeline = gsap.timeline({defaults: {duration: 2.0, ScrollTrigger: {trigger: ".motivation-section", start: "top center", markers: true, toggleActions: "play none none reverse"} }})
+const supportTimeline = gsap.timeline({defaults: {duration: 1.0, ease: "power2.inOut"},
+    scrollTrigger: {
+        trigger: ".motivation-section",
+        start: "top center",
+        markers: true,
+        toggleActions: "play none none reverse"
+    }
+})
 supportTimeline
-    .from(".text-support", {opacity: 0, ease: "power2.inOut"})
+    .from(".text-support", {opacity: 0})
+    .from(".blue-card-stack", {opacity: 0, y: "-500%", stagger: 0.5})
 
 const donationButton = document.getElementById('donateButton')
 const donationDropdown = document.getElementById('donateDropdown')

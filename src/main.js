@@ -49,17 +49,9 @@ gsap.from(".text-journey-02", {
     ease: "power2.in"
 })
 
-gsap.from(".text-support", {
-    duration: 2.0,
-    opacity: 0,
-    ease: "power2.inOut",
-    ScrollTrigger: {
-        trigger: ".Motivation-Section",
-        start: "top center",
-        markers: true,
-        toggleActions: "play none none reverse"
-    }
-})
+const supportTimeline = gsap.timeline({defaults: {duration: 2.0, ScrollTrigger: {trigger: ".motivation-section", start: "top center", markers: true, toggleActions: "play none none reverse"} }})
+supportTimeline
+    .from(".text-support", {opacity: 0, ease: "power2.inOut"})
 
 const donationButton = document.getElementById('donateButton')
 const donationDropdown = document.getElementById('donateDropdown')

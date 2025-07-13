@@ -78,3 +78,55 @@ document.addEventListener('click', (e) => {
 donationDropdown.addEventListener('click', (e) => {
     e.stopPropagation()
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.flip-card')
+    cards.forEach(card => {
+        const cardInner = card.querySelector('.flip-card-inner')
+        let isFlipped = false
+
+        card.addEventListener('click', () => {
+            if (!isFlipped) {
+                gsap.to(cardInner, {
+                    duration: 0.5,
+                    rotationY: 180,
+                    ease: "power2.inOut"
+                })
+                isFlipped = true
+            } else {
+                gsap.to(cardInner, {
+                    duration: 0.5,
+                    rotationY: 0,
+                    ease: "power2.inOut"
+                })
+                isFlipped = false
+            }
+        })
+    })
+})
+
+const learningCards = document.querySelectorAll('.learning-flip-card')
+
+learningCards.forEach(card => {
+    const cardInner = card.querySelector('.learning-flip-card-inner')
+    let isFlipped = false
+
+    card.addEventListener('click', () => {
+        if (!isFlipped) {
+            gsap.to(cardInner, {
+                duration: 0.5,
+                rotationY: 180,
+                ease: "power2.inOut"
+            })
+            isFlipped = true
+        } else {
+            gsap.to(cardInner, {
+                duration: 0.5,
+                rotationY: 0,
+                ease: "power2.inOut"
+            })
+            isFlipped = false
+        }
+      })
+   }
+)

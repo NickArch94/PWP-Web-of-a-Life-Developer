@@ -111,9 +111,10 @@
 
           <!-- Flexbox container for the 4 cards with custom positioning -->
           <div class="flex flex-wrap mx-auto mt-10 lg:flex-nowrap gap-8 items-center">
-
             <!-- Card 1 - Medium height, positioned lower -->
-            <div class="cards bg-gradient-to-t from-blue-800 to-blue-500 rounded-lg border-2 border-black p-6 text-white w-full mt-20 lg:w-1/4 h-full shadow-2xl">
+            <div class="learning-flip-card cards w-full mt-20 lg:w-1/4 h-full" style="perspective: 1000px;">
+              <div class="learning-flip-card-inner relative w-full h-full" style="transform-style: preserve-3d;">
+                <div class="learning-flip-card-front bg-gradient-to-t from-blue-800 to-blue-500 rounded-lg border-2 border-black p-6 text-white shadow-2xl" style="backface-visibility: hidden;">
               <!-- Circle placeholder -->
               <div class="bg-white rounded-full w-45 h-45 mx-auto mb-4"></div>
 
@@ -122,6 +123,18 @@
               <p class="text-sm leading-relaxed">
                 In terms of what helped my career transition a reality, I came across many different resources that helped make my journey more tangible. I would like to highlight the following resources:
               </p>
+                </div>
+              </div>
+              <!--back of card-->
+              <div class="learning-flip-card-back absolute w-full h-full bg-gradient-to-t from-blue-800 to-blue-500 rounded-lg border-2 border-black p-6 text-white shadow-2xl" style="backface-visibility: hidden; transform: rotateY(180deg);">
+                <!-- Circle placeholder -->
+                <div class="bg-white rounded-full w-45 h-45 mx-auto mb-4"></div>
+                <!-- Text content -->
+                <h2 class="text-2xl drop-shadow-[2px] font-bold">Invaluable Resources:</h2>
+                <p class="text-sm leading-relaxed">
+                  In terms of what helped my career transition a reality, I came across many different resources that helped make my journey more tangible. I would like to highlight the following resources:
+                </p>
+              </div>
             </div>
 
             <!-- Card 2 - Tallest card, starts at top -->
@@ -247,53 +260,98 @@
               <!-- Blue cards stack -->
               <div class="space-y-4">
                 <!-- Card 1 -->
-                <div class="blue-card-stack hover:my-rotate-y-180 bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8 cursor-pointer  text-white flex items-center gap-6">
-                  <div class="bg-white rounded-full w-35 h-35 flex-shrink-0"></div>
-                  <div>
-                    <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">Resources for Finding Comfort in Difficult Times</h2>
-                    <p class="text-sm leading-relaxed">
-                      In my rocky-yet-rewarding journey, I've always been able to find my own way. Here is a set of resources that I've come across to help me navigate through the difficult times that I've faced.
-                    </p>
-                  </div>
-                </div>
+                <div class="flip-card blue-card-stack cursor-pointer" style="perspective: 1000px;">
+                  <div class="flip-card-inner relative w-full h-full" style="transform-style: preserve-3d;">
+                    <!-- Front of card -->
+                    <div class="flip-card-front absolute w-full h-full bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8 text-white flex items-center gap-6" style="backface-visibility: hidden;">
+                      <div class="bg-white rounded-full w-35 h-35 flex-shrink-0"></div>
+                      <div>
+                        <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">Resources for Finding Comfort in Difficult Times</h2>
+                        <p class="text-sm leading-relaxed">
+                          In my rocky-yet-rewarding journey, I've always been able to find my own way. Here is a set of resources that I've come across to help me navigate through the difficult times that I've faced.
+                        </p>
+                      </div>
+                    </div>
 
-                <!-- BACK OF CARD 1 -->
-                <div class="blue-card-stack bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8 cursor-pointer  text-white flex items-center gap-6">
-                  <div class="bg-white rounded-full w-35 h-35 flex-shrink-0"></div>
-                  <div>
-                    <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">BACK OF CARD</h2>
-                    <p class="text-sm leading-relaxed">
-                      Back of Card-01, yo!!
-                    </p>
+                    <!-- Back of card -->
+                    <div class="flip-card-back bg-gradient-to-t from-purple-800 to-purple-600 shadow-2xl rounded-lg border-2 border-black p-8 text-white flex items-center gap-6" style="backface-visibility: hidden; transform: rotateY(180deg);">
+                      <div class="bg-white rounded-full w-35 h-35 flex-shrink-0"></div>
+                      <div>
+                        <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">Detailed Resources</h2>
+                        <ul class="text-sm leading-relaxed space-y-1">
+                          <li>• Mental Health America resources</li>
+                          <li>• Local support groups</li>
+                          <li>• Online therapy platforms</li>
+                          <li>• Crisis hotlines and chat services</li>
+                          <li>• Self-care and mindfulness apps</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="blue-card-stack bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8 cursor-pointer  text-white flex items-center gap-6">
-                  <div class="bg-white rounded-full w-35 h-35  flex-shrink-0"></div>
-                  <div>
-                    <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">Health Support</h2>
-                    <p class="text-sm leading-relaxed">
-                      Coping with my diagnosis of MS has been a huge undertaking. I've been lucky to have been = involved with support groups. I look to include the various means of support I've found for MS and autoimmune struggles. Nobody should have to go through it alone.
-                    </p>
+                <div class="flip-card blue-card-stack cursor-pointer" style="perspective: 1000px;">
+                  <div class="flip-card-inner relative w-full h-full" style="transform-style: preserve-3d;">
+                    <!-- Front of card -->
+                    <div class="flip-card-front absolute w-full h-full bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8 text-white flex items-center gap-6" style="backface-visibility: hidden;">
+                      <div class="bg-white rounded-full w-35 h-35 flex-shrink-0"></div>
+                      <div>
+                        <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">Health Support</h2>
+                        <p class="text-sm leading-relaxed">
+                          Coping with my diagnosis of MS has been a huge undertaking. I've been lucky to have been involved with support groups. I look to include the various means of support I've found for MS and autoimmune struggles. Nobody should have to go through it alone.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Back of card -->
+                    <div class="flip-card-back bg-gradient-to-t from-purple-800 to-purple-600 shadow-2xl rounded-lg border-2 border-black p-8 text-white flex items-center gap-6" style="backface-visibility: hidden; transform: rotateY(180deg)">
+                      <div class="bg-white rounded-full w-35 h-35 flex-shrink-0"></div>
+                      <div>
+                        <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">MS & Autoimmune Support</h2>
+                        <ul class="text-sm leading-relaxed space-y-1">
+                          <li>• National MS Society resources</li>
+                          <li>• Local MS support groups</li>
+                          <li>• Autoimmune disorder communities</li>
+                          <li>• Medical advocacy organizations</li>
+                          <li>• Disability rights resources</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="blue-card-stack bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8 cursor-pointer  text-white flex items-center gap-6">
-                  <div class="bg-white rounded-full w-35 h-35  flex-shrink-0"></div>
-                  <div>
-                    <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">Words Of Guidance</h2>
-                    <p class="text-sm leading-relaxed">
-                      I've had moments where I've felt like I didn't have anywhere or anyone to turn to. I felt like I didn't have anything to help me in dealing with my diagnosis. However... I found my solace and support in making new friends and discovering health resources that have helped me to not feel so alone. I, for once in my journey, was being heard directly. I will share resources and places of support that I hope will help others in their healing journey.
-                    </p>
+                <div class="flip-card blue-card-stack cursor-pointer" style="perspective: 1000px;">
+                  <div class="flip-card-inner relative w-full h-full" style="transform-style: preserve-3d;">
+                    <!-- Front of card -->
+                    <div class="flip-card-front absolute w-full h-full bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8 text-white flex items-center gap-6" style="backface-visibility: hidden;">
+                      <div class="bg-white rounded-full w-35 h-35 flex-shrink-0"></div>
+                      <div>
+                        <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">Words Of Guidance</h2>
+                        <p class="text-sm leading-relaxed">
+                          I've had moments where I've felt like I didn't have anywhere or anyone to turn to. I felt like I didn't have anything to help me in dealing with my diagnosis. However... I found my solace and support in making new friends and discovering health resources that have helped me to not feel so alone.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Back of card -->
+                    <div class="flip-card-back bg-gradient-to-t from-purple-800 to-purple-600 shadow-2xl rounded-lg border-2 border-black p-8 text-white flex items-center gap-6" style="backface-visibility: hidden; transform: rotateY(180deg)">
+                      <div class="bg-white rounded-full w-35 h-35 flex-shrink-0"></div>
+                      <div>
+                        <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">Inspirational Resources</h2>
+                        <ul class="text-sm leading-relaxed space-y-1">
+                          <li>• Motivational podcasts and books</li>
+                          <li>• Peer mentorship programs</li>
+                          <li>• Community meetup groups</li>
+                          <li>• Online forums and communities</li>
+                          <li>• Professional counseling services</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-          </div>
-        </div>
       </section>
 
 <!--I Blog-->

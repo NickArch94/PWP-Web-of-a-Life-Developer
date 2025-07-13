@@ -30,7 +30,7 @@ const postRouteHandler = async (request, response) => {
     response.header('Access-Control-Allow-Origin', '*')
     const schema = z.object({
         name: z.string({required_error: 'Name is required!'})
-            .min(1, {mesage: 'Name must be at least 1 character long'})
+            .min(1, {message: 'Name must be at least 1 character long'})
             .max(64, {message: 'Name cannot exceed 64 characters'})
             .trim()
             .transform(value => value.replace(/(\r\n|\n|\r)/gm, '')),

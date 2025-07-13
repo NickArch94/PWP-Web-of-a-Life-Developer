@@ -247,7 +247,7 @@
               <!-- Blue cards stack -->
               <div class="space-y-4">
                 <!-- Card 1 -->
-                <div class="blue-card-stack bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8  text-white flex items-center gap-6">
+                <div class="blue-card-stack bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8 cursor-pointer  text-white flex items-center gap-6">
                   <div class="bg-white rounded-full w-35 h-35 flex-shrink-0"></div>
                   <div>
                     <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">Resources for Finding Comfort in Difficult Times</h2>
@@ -257,8 +257,19 @@
                   </div>
                 </div>
 
+                <!-- BACK OF CARD 1 -->
+                <div class="blue-card-stack bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8 cursor-pointer  text-white flex items-center gap-6">
+                  <div class="bg-white rounded-full w-35 h-35 flex-shrink-0"></div>
+                  <div>
+                    <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">BACK OF CARD</h2>
+                    <p class="text-sm leading-relaxed">
+                      In my rocky-yet-rewarding journey, I've always been able to find my own way. Here is a set of resources that I've come across to help me navigate through the difficult times that I've faced.
+                    </p>
+                  </div>
+                </div>
+
                 <!-- Card 2 -->
-                <div class="blue-card-stack bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8  text-white flex items-center gap-6">
+                <div class="blue-card-stack bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8 cursor-pointer  text-white flex items-center gap-6">
                   <div class="bg-white rounded-full w-35 h-35  flex-shrink-0"></div>
                   <div>
                     <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">Health Support</h2>
@@ -269,7 +280,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="blue-card-stack bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8  text-white flex items-center gap-6">
+                <div class="blue-card-stack bg-gradient-to-t from-blue-800 to-blue-600 shadow-2xl rounded-lg border-2 border-black p-8 cursor-pointer  text-white flex items-center gap-6">
                   <div class="bg-white rounded-full w-35 h-35  flex-shrink-0"></div>
                   <div>
                     <h2 class="text-2xl leading-relaxed drop-shadow-[2px] font-bold">Words Of Guidance</h2>
@@ -393,11 +404,42 @@
       </section>
 
 
+
+      <section class="bg-blue-950 container px-12 py-12 items-center mx-auto rounded-lg antialiased md:py-08 mb-12">
 <!--Contact Form (express backend)-->
-<!--<form id='contact-form' class='bg-white p-6 shadow-md rounded novalidate>
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold md-4">Contact</h2>
-      <form-->
+        <form id='contact-form' class='p-2 pb-12 novalidate mx-auto'>
+          <div class="container mx-auto px-4">
+             <h2 class="text-5xl font-bold md-4 pb-12 -pt-4 text-white text-center justify-center">Contact</h2>
+          </div>
+          <div class="website">
+            <label for="website" class="block text-sm font-medium">Website</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="nope" />
+          </div>
+          <div class="mb-8">
+            <label for="name" class="block text-white text-xl font-bold mb-2">Name</label>
+            <input type="text" name="name" id="name" class="w-full px-4 py-3 border rounded" placeholder="Your name">
+            <p id="nameError" class="hidden mt-2 text-sm text-red-600"></p>
+          </div>
+          <div class="mb-8">
+            <label for="email" class="block text-white text-xl font-bold mb-2">Email</label>
+            <input type="email" name="email" id="email" class="w-full px-4  xy-none py-3 border rounded" placeholder="Your email">
+            <p id="emailError" class="hidden mt-2 text-sm text-red-600 dark:text-red-500"></p>
+          </div>
+          <div class="mb-8">
+            <label for="subject" class="block text-white text-xl font-bold mb-2">Subject</label>
+            <input type="text" id="subject" name="subject" class="w-full px-4  xy-none py-3 border rounded" placeholder="Your subject">
+            <p id="subjectError" class="hidden mt-2 text-sm text-red-600"></p>
+          </div>
+          <div class="mb-8">
+            <label for="message" class="block text-white text-xl font-bold mb-2">Message</label>
+            <textarea id="message" name="message" class="w-full px-4 py-3 border rounded" rows="4" placeholder="Your message"></textarea>
+            <p id="messageError" class="hidden mt-2 text-sm text-red-600"></p>
+          </div>
+          <button type="submit" class="bg-blue-500 text-white text-xl font-bold px-12 py-3 rounded">Send</button>
+          <div  class="hidden p-4 my-4 text-sm rounded-lg" id="status" role="alert">
+          </div>
+        </form>
+      </section>
 
   <footer class="bg-zinc-100 px-4 py-10">
     <div class="max-w-6xl mx-auto">

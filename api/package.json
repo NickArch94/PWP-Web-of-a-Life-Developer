@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "backend to send contact forms",
   "license": "Apache-2.0",
-  "author": "gkephart",
+  "author": "narchuleta",
   "type": "module",
   "main": "index.mjs",
   "scripts": {

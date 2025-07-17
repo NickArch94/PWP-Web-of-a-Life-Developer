@@ -1,5 +1,4 @@
-  yaml
-  name: Deploy via SSH
+name: Deploy via SSH
   'on':
     - push
     - repository_dispatch

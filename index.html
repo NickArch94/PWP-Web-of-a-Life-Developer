@@ -54,11 +54,11 @@
         <div class="flex gap-8 items-start mt-5">
           <!-- Left side - Large image placeholder -->
           <div class="text-journey flex-shrink-0">
-            <img class="border-2 border-gray-800 relative w-150 h-90 mb-4 shadow-xl" src="/src/public/471762349_10163244010087952_1100096013315584687_n.jpg" alt="Photograph" />
+            <img class="border-2 border-gray-800 relative object-cover w-[830px] h-[466.5px] mb-4 shadow-2xl" src="/src/public/471762349_10163244010087952_1100096013315584687_n.jpg" alt="Photograph" />
           </div>
 
           <!-- Right side - Three smaller image placeholders with text -->
-          <div class="flex gap-4 flex-1 bg-green-300 border-4 rounded-3xl p-6 pb-2">
+          <div class="flex gap-4 flex-1 bg-gradient-to-b from-cyan-700 to-cyan-500 border-4 rounded-3xl p-6 pb-2 shadow-2xl">
             <!-- Image 1 -->
             <div class="text-journey-02 flex-1">
               <div class="bg-white border-2 border-gray-800 relative w-5/6 ml-4 aspect-square mb-4 shadow-xl"></div>
@@ -69,12 +69,7 @@
 
             <!-- Image 2 -->
             <div class="text-journey-02 flex-1">
-              <div class="bg-white border-2 border-gray-800 relative w-5/6 ml-4 aspect-square mb-4 shadow-xl">
-                <svg class="text-journey-02 w-full h-full" viewBox="0 0 100 100">
-                  <line x1="10" y1="10" x2="90" y2="90" stroke="black" stroke-width="1"/>
-                  <line x1="90" y1="10" x2="10" y2="90" stroke="black" stroke-width="1"/>
-                </svg>
-              </div>
+              <img class="relative w-5/6 ml-4 aspect-square mb-4 shadow-xl object-cover" src="/src/public/IMG_9065.jpg" alt="IT Certifications">
               <p class="text-white text-center leading-relaxed text-sm">
                 Having tried my hand at many different aspects of IT, from learning about IT technical roles, to the basics of cybersecurity and the logistical confusions of machine learning, I found my niche in crafting attention-grabbing web applications.
               </p>
@@ -82,12 +77,7 @@
 
             <!-- Image 3 -->
             <div class="text-journey-02 flex-1">
-              <div class="bg-white border-2 border-gray-800 relative w-5/6 ml-4 aspect-square mb-4 shadow-xl">
-                <svg class="w-full h-full" viewBox="0 0 100 100">
-                  <line x1="10" y1="10" x2="90" y2="90" stroke="black" stroke-width="1"/>
-                  <line x1="90" y1="10" x2="10" y2="90" stroke="black" stroke-width="1"/>
-                </svg>
-              </div>
+              <img class="relative w-5/6 ml-4 aspect-square mb-4 shadow-xl" src="/src/public/atomic_66_logo.jpg" alt="Recent Tech Event">
               <p class="text-white text-center leading-relaxed text-sm">
                 Stepping into my first tech meetup was like walking onto a new kind of set, full of nervous energy and excitement. I quickly discovered a world not of gate-keepers, but of collaborators eager to share their passion. These gatherings became my reminder that we are all scripting our own paths, and it's far more rewarding to do it together.
               </p>
@@ -137,7 +127,9 @@
             </div>
 
             <!-- Card 2 - Tallest card, starts at top -->
-            <div class="learning-flip cards bg-gradient-to-t from-blue-800 to-blue-500 rounded-lg border-2 border-black p-6 text-white w-full mb-20 lg:w-1/4 h-full shadow-2xl">
+            <div class="learning-flip-card cards mb-20 lg:w-1/4 h-full" style="perspective: 1000px;">
+              <div class="learning-flip-card-inner relative w-full h-full" style="transform-style: preserve-3d;">
+               <div class="learning flip-card-front bg-gradient-to-t from-blue-800 to-blue-500 rounded-lg border-2 border-black p-6 text-white shadow-2xl" style="backface-visibility: hidden; position: absolute; -webkit-backface-visibility: hidden;">
               <!-- Circle placeholder -->
               <img class="rounded-full w-45 h-45 mx-auto mb-6" src="/src/public/AkMtgcWYS0izSIQbd6Bp_Mammoth-Logo-solo.png" alt="Meetup Snapshot">
 
@@ -147,7 +139,19 @@
                 Over the course of my career-switching journey, I had to find the right mindset to develop.
                 I want to highlight the following career-oriented content that I found helpful:
               </p>
+                 </div>
+                <!--back of card-->
+                <div class="learning-flip-card-back bg-gradient-to-t from-blue-800 to-blue-500 rounded-lg border-2 border-black p-6 text-white shadow-2xl" style="backface-visibility: hidden; transform: rotateY(180deg); -webkit-backface-visibility: hidden;">
+                  <div class="bg-white rounded-full w-45 h-45 mx-auto mb-4"></div>
+                  <!-- Text content -->
+                  <h2 class="text-2xl drop-shadow-[2px] font-bold">Career Stuff</h2>
+                  <p class="text-sm leading-relaxed">
+                    Over the course of my career-switching journey, I had to find the right mindset to develop.
+                    I want to highlight the following career-oriented content that I found helpful:
+                  </p>
             </div>
+           </div>
+          </div>
 
             <!-- Card 3 - Shorter card, positioned lowest -->
             <div class="cards bg-gradient-to-t from-blue-800 to-blue-500 rounded-lg border-2 border-black p-6 text-white w-full mt-20 lg:w-1/4 h-full shadow-2xl">

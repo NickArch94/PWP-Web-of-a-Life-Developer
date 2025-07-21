@@ -57,7 +57,7 @@ const supportTimeline = gsap.timeline({defaults: {duration: 1.0, ease: "power2.i
 })
 supportTimeline
     .from(".text-support", {opacity: 0})
-    .from(".blue-card-stack", {opacity: 0, y: "-500%", stagger: 0.2})
+    .from(".blue-card-stack", {opacity: 0, y: "-500%", stagger: 0.1})
 
 // const donationButton = document.getElementById('donateButton')
 // const donationDropdown = document.getElementById('donateDropdown')
@@ -125,6 +125,5 @@ learningCards.forEach(card => {
             })
             isFlipped = false
         }
-      })
-   }
-)
+    })
+})

@@ -14,7 +14,6 @@ gsap.fromTo('.cards', {
     scrollTrigger: {
         trigger: '.main-section',
         start: 'top center',
-        markers: true,
         toggleActions: "play none none reverse"
     },
     duration: 2,
@@ -53,16 +52,15 @@ const supportTimeline = gsap.timeline({defaults: {duration: 1.0, ease: "power2.i
     scrollTrigger: {
         trigger: ".motivation-section",
         start: "top center",
-        markers: true,
         toggleActions: "play none none reverse"
     }
 })
 supportTimeline
     .from(".text-support", {opacity: 0})
-    .from(".blue-card-stack", {opacity: 0, y: "-500%", stagger: 0.5})
+    .from(".blue-card-stack", {opacity: 0, y: "-500%", stagger: 0.2})
 
-const donationButton = document.getElementById('donateButton')
-const donationDropdown = document.getElementById('donateDropdown')
+// const donationButton = document.getElementById('donateButton')
+// const donationDropdown = document.getElementById('donateDropdown')
 
 donationButton.addEventListener('click', (e) => {
     e.stopPropagation()

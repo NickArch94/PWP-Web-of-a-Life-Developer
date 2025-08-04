@@ -101,6 +101,36 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         })
     })
+
+    // Ensure the animation runs after the image is loaded
+    const ribbonImg = document.querySelector('.ribbon');
+    if (ribbonImg) {
+        if (ribbonImg.complete) {
+            gsap.fromTo(ribbonImg, {
+                opacity: 0,
+                rotationX: -30,
+                x: -500
+            }, {
+                duration: 1.0,
+                opacity: 1,
+                rotationX: 0,
+                x: 0,
+                ease: "power2.inOut"
+            });
+        } else {
+            ribbonImg.addEventListener('load', () => {
+                gsap.fromTo(ribbonImg, {
+                    opacity: 0,
+                    x: -500
+                }, {
+                    duration: 1.0,
+                    opacity: 1,
+                    x: 0,
+                    ease: "power2.inOut"
+                });
+            });
+        }
+    }
 })
 
 const learningCards = document.querySelectorAll('.learning-flip-card')

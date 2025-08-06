@@ -94,7 +94,7 @@ export function contactForm() {
         })
         return
     }
-    fetch('http://localhost:4200/apis', {
+    fetch('/apis', {
         method: 'post',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify(values)

@@ -90,7 +90,7 @@ indexRoute.route('/')
     .get(getRouteHandler)
     .post(postRouteHandler)
 
-app.use('/api', indexRoute)
+app.use('/apis', indexRoute)
 
 app.listen(4200, () => {
     console.log('server is running')

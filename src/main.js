@@ -59,23 +59,7 @@ supportTimeline
     .from(".text-support", {opacity: 0})
     .from(".blue-card-stack", {opacity: 0, y: "-500%", stagger: 0.1})
 
-// const donationButton = document.getElementById('donateButton')
-// const donationDropdown = document.getElementById('donateDropdown')
 
-donationButton.addEventListener('click', (e) => {
-    e.stopPropagation()
-    donationDropdown.classList.toggle('hidden')
-})
-
-document.addEventListener('click', (e) => {
-    if (!donationButton.contains(e.target)) {
-        donationDropdown.classList.add('hidden')
-    }
-})
-
-donationDropdown.addEventListener('click', (e) => {
-    e.stopPropagation()
-})
 
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.flip-card')

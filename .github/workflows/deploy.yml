@@ -25,4 +25,4 @@ jobs:
       - name: Deploy to server
         run: |
           ssh-keyscan -H webofalifedeveloper.dev >> ~/.ssh/known_hosts 
-          scp -r ./dist/* your-username@webofalifedeveloper.dev:/var/www/webofalifedeveloper.dev/html
+          scp -r ./dist/* narchuleta16@webofalifedeveloper.dev:/var/www/webofalifedeveloper.dev/html
